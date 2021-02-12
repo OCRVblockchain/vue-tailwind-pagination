@@ -1,6 +1,6 @@
 # Vue Tailwind Pagination
 
-![build](https://github.com/OCRVblockchain/vue-tailwind-pagination/workflows/build/badge.svg)
+![build](https://github.com/OCRVblockchain/vue-tailwind-pagination/workflows/build/badge.svg?branch=main)
 ![downloads-week](https://img.shields.io/npm/dw/@ocrv/vue-tailwind-pagination)
 ![downloads](https://img.shields.io/npm/dt/@ocrv/vue-tailwind-pagination)
 
