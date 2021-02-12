@@ -6,6 +6,8 @@
 
 Vue component for creating Pagination using [Tailwind CSS](https://tailwindcss.com).
 
+<img width="1431" alt="screenshot" src="https://user-images.githubusercontent.com/18230071/107767792-9af7c700-6d46-11eb-92ee-3478062e3c80.png">
+
 ## Install
 
 ```
