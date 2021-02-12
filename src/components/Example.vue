@@ -11,7 +11,7 @@ import {defineComponent} from 'vue'
 import VueTailwindPagination from './VueTailwindPagination/index.vue'
 
 export default defineComponent({
-  name: 'Table Example',
+  name: 'Pagination Example',
   components: {
     VueTailwindPagination,
   },

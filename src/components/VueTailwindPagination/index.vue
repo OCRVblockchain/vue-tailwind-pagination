@@ -1,15 +1,19 @@
 <template>
   <div class="min-w-max">
-    <section class="flex justify-between bg-white shadow-xl rounded-lg border border-gray-100 px-10 py-5 text-gray-700 font-montserrat">
+    <section
+        class="flex justify-between bg-white rounded-lg border border-gray-200 px-10 py-5 text-gray-700 font-montserrat">
       <ul class="flex items-center">
-        <li class="pr-6" v-if="hasPrev()" @click.prevent="changePage(prevPage)">
-          <div class="flex items-center justify-center hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6">
-            <div class="transform -rotate-45">
-              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-              </svg>
+        <li class="pr-6" v-if="hasPrev()">
+          <a href="#" @click.prevent="changePage(prevPage)">
+            <div class="flex items-center justify-center hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6">
+              <div class="transform -rotate-45">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
         <li class="pr-6" v-if="hasFirst()">
           <a href="#" @click.prevent="changePage(1)">
@@ -22,7 +26,7 @@
         </li>
         <li class="pr-6" v-if="hasFirst()">...</li>
         <li class="pr-6" v-for="page in pages">
-          <a href="#" @click.prevent="changePage(page)" :class="{ current: current == page }">
+          <a href="#" @click.prevent="changePage(page)">
             <div :class="{'bg-gradient-to-r from-blue-400 to-indigo-400': current == page}"
                  class="flex hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6 items-center justify-center">
               <span class="transform -rotate-45">{{ page }}</span>
@@ -39,15 +43,17 @@
             </div>
           </a>
         </li>
-        <li class="pr-6" v-if="hasNext()" @click.prevent="changePage(nextPage)">
-          <div class="flex items-center justify-center hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6">
-            <div class="transform -rotate-45">
-              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                   stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-              </svg>
+        <li class="pr-6" v-if="hasNext()">
+          <a href="#" @click.prevent="changePage(nextPage)">
+            <div class="flex items-center justify-center hover:bg-gray-200 rounded-md transform rotate-45 h-6 w-6">
+              <div class="transform -rotate-45">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
       </ul>
 
