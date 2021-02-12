@@ -1,7 +1,6 @@
 <template>
   <div class="min-w-max">
-    <section
-        class="flex justify-between bg-white rounded-lg border border-gray-200 px-10 py-5 text-gray-700 font-montserrat">
+    <section class="flex justify-between bg-white rounded-lg border border-gray-200 px-10 py-3 text-gray-700 font-montserrat">
       <ul class="flex items-center">
         <li class="pr-6" v-if="hasPrev()">
           <a href="#" @click.prevent="changePage(prevPage)">
