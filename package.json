@@ -1,6 +1,6 @@
 {
   "name": "@ocrv/vue-tailwind-pagination",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vue Tailwind Pagination",
   "files": [
     "dist"
@@ -17,6 +17,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test:unit": "vue-cli-service test:unit",
     "style": "tailwindcss build src/assets/styles/index.css -o src/assets/styles/tailwind.css"
   },
   "dependencies": {
@@ -25,7 +26,10 @@
   "devDependencies": {
     "@types/node": "^14.14.21",
     "@vitejs/plugin-vue": "^1.0.4",
+    "@vue/cli-plugin-unit-mocha": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
     "@vue/compiler-sfc": "^3.0.5",
+    "@vue/test-utils": "^2.0.0-alpha.8",
     "@vuedx/typescript-plugin-vue": "^0.4.1",
     "autoprefixer": "^10.2.1",
     "postcss": "^8.2.4",
