@@ -1,7 +1,14 @@
 <template>
   <main class="min-h-screen bg-blue-50">
     <div class="p-5">
-      <VueTailwindPagination :current="current" :total="total" :per-page="perPage" @page-changed="current = $event"/>
+      <VueTailwindPagination
+          :current="current"
+          :total="total"
+          :per-page="perPage"
+          @page-changed="current = $event"
+
+          text-before-input="Перейти к странице"
+          text-after-input="Вперед"/>
     </div>
   </main>
 </template>

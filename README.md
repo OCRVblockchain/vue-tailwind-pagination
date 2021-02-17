@@ -39,7 +39,7 @@ export default {
     data() {
         return {
             currentPage: 1,
-            perPage: 2,
+            perPage: 5,
             total: 20
         }
     }
@@ -49,7 +49,14 @@ export default {
 Next, in your HTML code:
 
 ```html
-<VueTailwindPagination :current="currentPage" :total="total" :per-page="perPage" @page-changed="current = $event"/>
+<VueTailwindPagination
+        :current="currentPage"
+        :total="total"
+        :per-page="perPage"
+        @page-changed="current = $event"
+
+        text-before-input="Idź do strony"
+        text-after-input="Idź"/>
 ```
 
 More examples [here](https://github.com/OCRVblockchain/vue-tailwind-pagination/blob/main/src/components/Example.vue)
