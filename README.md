@@ -53,7 +53,7 @@ Next, in your HTML code:
         :current="currentPage"
         :total="total"
         :per-page="perPage"
-        @page-changed="current = $event"
+        @page-changed="currentPage = $event"
 
         text-before-input="Idź do strony"
         text-after-input="Idź"/>
