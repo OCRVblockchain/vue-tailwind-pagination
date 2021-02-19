@@ -1,6 +1,6 @@
 {
   "name": "@ocrv/vue-tailwind-pagination",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Vue Tailwind Pagination",
   "files": [
     "dist"
